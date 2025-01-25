@@ -7,7 +7,7 @@ function makeFormLabels(form) {
   const inputsFromFirstForm = form.querySelectorAll('input');
 
   for (const el of inputsFromFirstForm) {
-    const labelElement = document.createElement('lavel');
+    const labelElement = document.createElement('label');
 
     labelElement.textContent = `${el.getAttribute('name')}`;
     labelElement.classList.add('field-label');
@@ -19,5 +19,3 @@ function makeFormLabels(form) {
 
 makeFormLabels(firstForm);
 makeFormLabels(secondForm);
-
-
